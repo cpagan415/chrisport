@@ -5,7 +5,7 @@ export const InfoContainer= styled.div`
 background: white;
 display: flex;
 flex-direction: column;
-height: 800px;
+height: 600px;
 align-items: center;
 justify-content: center;
 position: relative;

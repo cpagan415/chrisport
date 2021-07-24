@@ -3,7 +3,12 @@ import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import {Nav, NavContainer, Logo, NavMenu, MobileIcon, NavLinks, NavItem} from './NavbarEl';
 
-function Navbar() {
+function Navbar(props){
+    const{
+        portSelected,
+        setPortSelected
+      } = props;
+
   return (
         <>
         <Nav>
@@ -16,13 +21,13 @@ function Navbar() {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about">About Me</NavLinks>
+                        <NavLinks to="about" onClick={() =>  setPortSelected(false)}>About Me</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="portfolio">Portfolio</NavLinks>
+                        <NavLinks onClick={() => setPortSelected(true)}>Portfolio</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">Contact</NavLinks>
+                        <NavLinks to="contact" onClick={() =>  setPortSelected(false)}>Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavContainer>
