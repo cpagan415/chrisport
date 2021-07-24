@@ -8,8 +8,8 @@ import { InfoContainer, InfoContent, InfoH1} from '../InfoStyle/infostyle';
 function About(){
     return (
         <>
-        <InfoContainer>
-            <InfoH1 id="about">About Me</InfoH1>
+        <InfoContainer id="about">
+            <InfoH1>About Me</InfoH1>
             <AboutImg src={pic} />
             <InfoContent>I am a Web Dev Boot Camp student 
                 who lives in Orlando, Florida. I am currently learning
