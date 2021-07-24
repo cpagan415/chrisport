@@ -10,6 +10,7 @@ export const Nav = styled.nav`
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 2;
 `
 
 export const NavContainer = styled.div`
