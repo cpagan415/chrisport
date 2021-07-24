@@ -1,5 +1,7 @@
 import React from 'react';
-import {Nav, NavContainer, Logo} from './NavbarEl';
+//access to font awesome icons here: 
+import { FaBars } from 'react-icons/fa';
+import {Nav, NavContainer, Logo, NavMenu, MobileIcon, NavLinks, NavItem} from './NavbarEl';
 
 function Navbar() {
   return (
@@ -9,6 +11,20 @@ function Navbar() {
                 <Logo to='/'>
                     CMP
                 </Logo>
+                <MobileIcon>
+                    <FaBars />
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks to="about">About Me</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="portfolio">Portfolio</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to="contact">Contact</NavLinks>
+                    </NavItem>
+                </NavMenu>
             </NavContainer>
         </Nav>
         </>
