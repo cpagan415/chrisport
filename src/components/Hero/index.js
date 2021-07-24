@@ -5,7 +5,7 @@ import { HeroContainer, HeroBg, VideoEff, HeroContent, Heroh1, Heroul } from './
 function Hero(){
 
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <HeroBg>
                 <VideoEff autoPlay loop muted src={video} type='video/mp4' />
             </HeroBg>

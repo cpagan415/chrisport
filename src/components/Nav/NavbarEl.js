@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 //usin react router and react scroll here 
-import { Link as LinkR } from 'react-router-dom';
+// import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
@@ -22,7 +22,7 @@ export const NavContainer = styled.div`
     padding: 0 24 px;
     max-width; 1100px;
 `
-export const Logo = styled(LinkR)`
+export const Logo = styled(LinkS)`
     color:white;
     padding: 20px;
     cursor: pointer;

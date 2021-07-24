@@ -8,7 +8,7 @@ function Navbar() {
         <>
         <Nav>
             <NavContainer>
-                <Logo to='/'>
+                <Logo to="home">
                     CMP
                 </Logo>
                 <MobileIcon>
