@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const HeroContainer = styled.div`
-    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 900px;
     position: relative;
     z-index: 1;
 `
@@ -40,12 +39,15 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
     font-family: Oswald, sans-serif;
+    top: 0;
+    margin-top: 380px;
     `
 
 export const Heroh1 = styled.h1`
         color: white;
         font-size: 60px;
         text-align: center;
+       
 
         @media screen and (max-width: 768px)
         {

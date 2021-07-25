@@ -13,7 +13,7 @@ function Navbar(props){
         <>
         <Nav>
             <NavContainer>
-                <Logo to="home">
+                <Logo to="home" onClick={() =>  setPortSelected(false)}>
                     CMP
                 </Logo>
                 <MobileIcon>

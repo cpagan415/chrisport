@@ -5,8 +5,8 @@ import { HeroContainer, HeroBg, VideoEff, HeroContent, Heroh1, Heroul } from './
 function Hero(){
 
     return (
-        <HeroContainer id="home">
-            <HeroBg>
+        <HeroContainer>
+            <HeroBg id="home">
                 <VideoEff autoPlay loop muted src={video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
@@ -14,7 +14,7 @@ function Hero(){
                 <Heroul>
                 <li><a onClick={() => window.open('https://www.linkedin.com/in/christina-pagan-19889b1aa/')}>LinkedIn</a></li>
                 <li><a onClick={() => window.open('https://github.com/cpagan415')}>Github</a></li>
-                <li>Email</li>
+                <li>Contact</li>
                 </Heroul>
             </ HeroContent>
         </HeroContainer>

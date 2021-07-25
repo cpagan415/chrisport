@@ -2,7 +2,7 @@ import React, {useState}  from 'react';
 import Navbar from '../components/Nav';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Gallery from '../components/Gallery';
+import Portfolio from '../components/Portfolio';
 import Footer from '../components/Footer';
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
             <About />
             </>
             ) : (
-            <Gallery />
+            <Portfolio />
             )}
             <Footer />
         </section>

@@ -5,21 +5,18 @@
   font-family: 'Oswald', sans-serif;
 }
 
-li
+.footerContainer, #name
 {
-  cursor: pointer;
-}
-
-.container
-{
-  width: 100%;
-  height: 100px;
+  background-color: black;
+  color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 2rem;
-  background-color: black;
+  height:50px;
+}
+
+#name
+{
+  font-size: 5px;
 }
 
 .icon
@@ -27,14 +24,11 @@ li
   margin: 20px;
 }
 
-#name
+a
 {
-  background-color: black;
-  color: white;
-  font-size: 5px;
-  display: flex;
-  justify-content: center;
+  cursor: pointer;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+@import "react-image-gallery/styles/css/image-gallery.css";
