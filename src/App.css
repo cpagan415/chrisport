@@ -5,6 +5,27 @@
   font-family: 'Oswald', sans-serif;
 }
 
+
+.aboutContainer
+{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.aboutP
+{
+  margin-top: 50px;
+  text-align: center;
+  width: 700px;
+}
+
+
 .footerContainer, #name
 {
   background-color: black;
@@ -30,5 +51,52 @@ a
 }
 
 
+
+/* Portfolio CSS */
+
+.portfolioContainer
+{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 100px;
+
+}
+
+img
+{
+  padding: 20px;
+}
+.portfolioH1
+{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*Media Queries*/
+
+
+@media only screen and (max-width: 768px)
+    {
+      p
+      {
+        width: 100%;
+        padding: 100px;
+      }
+    }
+
+    @media only screen and (max-width: 480px)
+    {
+      p
+      {
+        width: 100%;
+        margin-top: 0px;
+        padding: 20px;
+      }
+    }
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
-@import "react-image-gallery/styles/css/image-gallery.css";
+
+

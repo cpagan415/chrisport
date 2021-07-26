@@ -1,13 +1,30 @@
+import React, {useState}  from 'react';
+import Navbar from './components/Nav';
+import Hero from './components/Hero';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 import './App.css';
-import Home from './pages/index';
-import{ BrowserRouter as Router } from 'react-router-dom';
+
 
 function App() {
     
+  const [portSelected, setPortSelected] = useState(false);
   return (
-    <Router>
-      <Home />
-    </Router>
+    <>
+            <Navbar
+              portSelected={portSelected}
+              setPortSelected={setPortSelected} />
+            {!portSelected ? (
+                <>
+             <Hero />
+            <About />
+            </>
+            ) : (
+            <Portfolio />
+            )}
+            <Footer />
+            </>
   );
 }
 
