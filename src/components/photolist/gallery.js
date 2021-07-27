@@ -8,5 +8,6 @@ import pro7 from '../../images/6.png';
 import pro8 from '../../images/7.png';
 
 export default [
+
     pro1, pro2, pro3, pro4, pro5, pro6, pro7, pro8
 ]

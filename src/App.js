@@ -10,6 +10,7 @@ import './App.css';
 function App() {
     
   const [portSelected, setPortSelected] = useState(false);
+
   return (
     <>
             <Navbar
