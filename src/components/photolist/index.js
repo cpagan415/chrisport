@@ -1,65 +1,37 @@
 import React from 'react';
-import projectPhotos from './gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
+import '../../App.css';
+import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 //passed prop from Portfolio to the Photolist for Modal Functionality 
-const PhotoList = ({setSelectedProject}) =>
+const PhotoList = (props) =>
 {
+    const 
+    {
+        projects = [],
+        selectedProject,
+        setSelectedProject
+    } = props;
 
-    const projects = [
-        {
-            name: 'Note Taker',
-            description: 'Description on Note Taker'
-        },
-        {
-            name: 'Weather Dashboard',
-            description: 'Description on Note Taker'
-        },
-        {
-            name: 'Work Day Scheduler',
-            description: 'Description on Note Taker'
-        },
-        {
-            name: 'Password Genertor',
-            description: 'Description on Note Taker'
-        },
-        {
-            name: 'Note Taker',
-            description: 'Description on Note Taker'
-        },
-        {
-            name: 'Note Taker',
-            description: 'Description on Note Taker'
-        },
-        {
-            name: 'Note Taker',
-            description: 'Description on Note Taker'
-        }
-    ]
-
-
-    
 
     return(
         <>
-        <Container fluid>
-        <Row>
-            <Col sm={8} md={2} lg={4}>
-            {projectPhotos.map((index) => (
-                <img 
-                src={index} 
-                key={index}
-                //onClick pases the value of the project image for the Modal
-                onClick={() => setSelectedProject(index)} />
-            ))}
+       <Row style={{margin: '90px'}} >
+        <Row xs={1} md={2} lg={2} xl={4} className="g-0" style={{width: '100%'}}>
+        {projects.map((project, i) => (
+             <Col>
+            <Card style={{height: '20rem'}} className={`card-style ${selectedProject.name === project.name}`}
+            key={project.name}>
+                <Card.Img className="gridPhoto" src={`../../images/${i}.png`} alt=""></Card.Img>
+            </Card>
             </Col>
-        </Row>
-        </Container>
-        </>
+         ))}
+         </Row>
+         </Row>
+         </>
     )
 }
 

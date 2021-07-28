@@ -6,9 +6,9 @@ import '../../App.css';
 function About(){
     return (
         <>
-        <div class="aboutContainer" id="about">
+        <div class="aboutContainer">
             <h1>About Me</h1>
-            <p class="aboutP">I am a Web Dev Boot Camp student 
+            <p class="aboutP" id="about">I am a Web Dev Boot Camp student 
                 who lives in Orlando, Florida. My story is a unique. I originally grew up 
                 in New York City and recieved a bachelor's in legal studies. It was not until later
                 on in my career in banking and insurance that I gained an interest in learning 

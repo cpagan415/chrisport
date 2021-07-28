@@ -33,6 +33,7 @@
   display: flex;
   justify-content: center;
   height:50px;
+  z-index: 2;
 }
 
 #name
@@ -56,81 +57,63 @@ a
 
 .portfolioContainer
 {
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 100px;
-
+  text-align: center;
+  margin: auto;
 }
 
-img
+.portfolioP
 {
-  padding: 20px;
+  margin: 0px 450px 0px;
 }
+
 .portfolioH1
 {
   margin-top: 150px;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
-
-/*For Modal: based on class lessons*/
-
-#modalImg
+.gridPhoto
 {
-  width: 600px;
-  height: 400px;
-}
-.modalBackdrop {
-  background: rgba(0, 0, 0, .80);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  height: 100vw;
+  object-fit: cover;
 }
 
-.modalContainer {
-  width: 100%;
-  margin: 80px auto;
-  text-align: center;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-  margin-bottom: 25px;
-  color: white;
-}
-
-#modalP
+.gridPhoto:hover
 {
-  color: white;
+  opacity: 0.1;
+  transition-duration: .8s;
 }
 
 /*Media Queries*/
 
-
-@media only screen and (max-width: 768px)
-    {
-      p
+@media only screen and (max-width: 1350px)
+{
+      .portfolioP
       {
-        width: 100%;
-        padding: 100px;
+        text-align: center;
+        margin: 0px 250px 0px;
       }
-    }
 
-    @media only screen and (max-width: 480px)
-    {
-      p
+}
+
+
+@media only screen and (max-width: 900px)
+{
+      .portfolioP
       {
-        width: 100%;
-        margin-top: 0px;
-        padding: 20px;
+        text-align: center;
+        margin: 0px 150px 0px;
       }
-    }
+}
 
 
+@media only screen and (max-width: 500px)
+{
+      .portfolioP
+      {
+        text-align: center;
+        margin: 0px 50px 0px;
+      }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 

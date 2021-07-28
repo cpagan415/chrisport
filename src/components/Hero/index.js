@@ -5,12 +5,12 @@ import { HeroContainer, HeroBg, VideoEff, HeroContent, Heroh1, Heroul } from './
 function Hero(){
 
     return (
-        <HeroContainer>
-            <HeroBg id="home">
+        <HeroContainer id="home">
+            <HeroBg>
                 <VideoEff autoPlay loop muted src={video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <Heroh1>Christina Pagan</Heroh1>
+                <Heroh1>Christina Mueller</Heroh1>
                 <Heroul>
                 <li><a onClick={() => window.open('https://www.linkedin.com/in/christina-pagan-19889b1aa/')}>LinkedIn</a></li>
                 <li><a onClick={() => window.open('https://github.com/cpagan415')}>Github</a></li>
