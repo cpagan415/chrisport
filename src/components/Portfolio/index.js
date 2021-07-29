@@ -4,6 +4,7 @@ import PhotoList from '../photolist';
 
 
 
+
 function Portfolio(){
 
   /* setSelectedProject is passed down as a prop for the modal functionality */
@@ -43,14 +44,16 @@ function Portfolio(){
     
 ])
             const [selectedProject, setSelectedProject] = useState(projects[0]);
+          
+
         return(
           <>
-            <h3 className="portfolioH">Portfolio</h3>
+            <h3 className="portfolioH">Portfolio</h3> 
             <PhotoList
              projects={projects}
              selectedProject={selectedProject}
-             setSelectedProject={setSelectedProject}/>
-          </>
+            setSelectedProject={setSelectedProject}/>
+            </>
 
     )
  
