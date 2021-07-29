@@ -83,10 +83,9 @@ a
 {
   height:300px;
   width: 550px;
-  align-self: center;
 }
 .modalBg {
-	background: rgba(0, 0, 0, .85);
+	background: rgba(5, 8, 4, .85);
 	bottom: 0;
   left: 0;
   right: 0;
@@ -97,15 +96,23 @@ a
 
 .modalContainer {
   width: 500px;
-  margin: 200px auto;
+  margin-top: 200px;
+  margin-left: 180px;
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .modalTitle {
 	font-size: 40px;
 	margin-bottom: 30px;
+}
+
+.modalP
+{
+  padding: 40px;
+  margin-left: 20px;
+  width: 500px;
 }
 
 .closeSymbol

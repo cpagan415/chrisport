@@ -1,23 +1,34 @@
 import React from 'react'
 import '../../App.css';
-import { BsX } from "react-icons/bs";
+import {motion} from 'framer-motion';
 
 function Modal({onClose, currentInfo}){
 
-  const {name, description, index} = currentInfo;
+  const {name, description, url, index} = currentInfo;
 
     return (
         <>
-        <div className="modalBg"  onClick={onClose}>
-        //<BsX className="closeSymbol" onClick={onClose}></BsX>
-        <div className="modalContainer">
-          <img className="modalPhoto" src={`../../images/${index}.png`} alt="current category" />
+        <motion.div className="modalBg"  
+        onClick={onClose}
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}>
+        <motion.div 
+        animate={{ x: -100 }}
+        transition={{ type: "spring", stiffness: 50 }}
+        className="modalContainer">
+          <div>
+          <a onClick={() => window.open(url)}>
+            <img className="modalPhoto" src={`../../images/${index}.png`} alt="current category" />
+            </a>
           <h3 className="modalTitle">{name}</h3>
-          <p>
+          </div>
+          <div>
+          <p className="modalP">
             {description}
           </p>
-        </div>
-      </div>
+          </div>
+        </motion.div>
+      </motion.div>
       </>
     )
 }
