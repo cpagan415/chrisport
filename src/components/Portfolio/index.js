@@ -25,10 +25,6 @@ function Portfolio(){
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.'
     },
     {
-        name: 'I Am Bored',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.'
-    },
-    {
         name: 'Water Ways',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.'
     },
@@ -39,17 +35,17 @@ function Portfolio(){
     {
         name: 'Employee Tracker',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.'
+    },
+    {
+        name: 'Tech Blog',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.'
     }
     
 ])
             const [selectedProject, setSelectedProject] = useState(projects[0]);
         return(
           <>
-            <div className="portfolioContainer">
-            <h1 className="portfolioH1">Portfolio</h1>
-            <p className="portfolioP">This is a collection of projects I have done during my time at UCF's  Web Dev Bootcamp. I look forward to 
-            expanding this gallery in the future as I continue to learn new web development technologies. </p>
-            </div>
+            <h3 className="portfolioH">Portfolio</h3>
             <PhotoList
              projects={projects}
              selectedProject={selectedProject}
