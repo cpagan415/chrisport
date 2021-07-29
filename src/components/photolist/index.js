@@ -42,7 +42,7 @@ const PhotoList = (props) =>
              <motion.div
             initial={{opacity: 0}}
             animate={{opacity: [0,1]}}
-            transition={{ duration: 0.9, delay: i/7}}
+            transition={{ duration: 0.5, delay: i/7}}
             >
             <Card border="light" style={{height: '15rem'}} className={`text-center card-style ${selectedProject.name === project.name}`}
             key={project.name}>

@@ -82,7 +82,39 @@ a
 .modalPhoto
 {
   height:300px;
-  width: 450px;
+  width: 550px;
+  align-self: center;
+}
+.modalBg {
+	background: rgba(0, 0, 0, .85);
+	bottom: 0;
+  left: 0;
+  right: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.modalContainer {
+  width: 500px;
+  margin: 200px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalTitle {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.closeSymbol
+{
+  font-size: 30px;
+}
+
+.closeSymbol:hover{
+  opacity: 0.3;
 }
 
 /*Media Queries*/
