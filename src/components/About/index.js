@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Navbar from '../Nav';
+import Footer from '../Footer';
 import {motion} from 'framer-motion';
 
 
@@ -33,6 +34,7 @@ function About(){
                 with React.js. I am looking forward to creating more web applications in the future. Please feel free
                 to take a look at the work I have done so far. </motion.p>
         </motion.div>
+        <Footer />
         </>
     )
 }

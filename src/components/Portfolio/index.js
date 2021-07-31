@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../../App.css';
 import PhotoList from '../photolist';
 import Navbar from '../Nav';
+import Footer from '../Footer';
 import {motion} from 'framer-motion';
 
 
@@ -68,6 +69,7 @@ function Portfolio(){
              selectedProject={selectedProject}
             setSelectedProject={setSelectedProject}/>
             </motion.div>
+        <Footer />
             </>
 
     )
