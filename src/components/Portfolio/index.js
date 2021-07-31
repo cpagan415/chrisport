@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../../App.css';
 import PhotoList from '../photolist';
+import Navbar from '../Nav';
+import {motion} from 'framer-motion';
 
 
 
@@ -53,14 +55,19 @@ function Portfolio(){
 ])
             const [selectedProject, setSelectedProject] = useState(projects[0]);
           
-
+            
         return(
           <>
-            <h3 className="portfolioH">Portfolio</h3> 
+          <Navbar />
+          <motion.div
+          exit={{opacity: 0,
+          transition: {duration: 0.3}}}>
+          <h3>Portfolio</h3>
             <PhotoList
              projects={projects}
              selectedProject={selectedProject}
             setSelectedProject={setSelectedProject}/>
+            </motion.div>
             </>
 
     )

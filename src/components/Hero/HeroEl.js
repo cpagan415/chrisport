@@ -40,7 +40,7 @@ export const HeroContent = styled.div`
     align-items: center;
     font-family: Oswald, sans-serif;
     top: 0;
-    margin-top: 380px;
+    margin-top: 250px;
     `
 
 export const Heroh1 = styled.h1`

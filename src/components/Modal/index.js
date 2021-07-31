@@ -11,8 +11,10 @@ function Modal({onClose, currentInfo}){
         <motion.div className="modalBg"  
         onClick={onClose}
         initial={{opacity: 0}}
-        animate={{opacity: 1}}>
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}>
         <motion.div 
+        initial={{x: 0}}
         animate={{ x: -100 }}
         transition={{ type: "spring", stiffness: 50 }}
         className="modalContainer">
