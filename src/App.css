@@ -11,7 +11,7 @@
   background: white;
   display: flex;
   flex-direction: column;
-  height: 720px;
+  height: 78vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -68,13 +68,45 @@ a
   object-fit: fill;
 }
 
-.gridPhoto:hover 
-{
-  opacity: 0.1;
-}
 .card-style
 {
   box-shadow: 0 10px 8px 0 rgba(0,0,0,0.1);
+}
+
+.imgOverlay
+{
+  background: rgba(255,255,255, 1);
+  opacity: 0;
+  transition: opacity 0.45s;
+}
+
+/*target each child with following*/
+.imgOverlay .overlayTitle
+{
+  transform: translateY(-20px);
+  transition: transform 0.25s;
+
+}
+
+.imgOverlay .overlayDescription
+{
+  transform: translateY(150px);
+  transition: transform 0.25s;
+}
+
+.imgOverlay:hover .overlayTitle
+{
+  transform: translateY(60px);
+}
+
+.imgOverlay:hover .overlayDescription
+{
+  transform: translateY(90px);
+}
+
+.imgOverlay:hover
+{
+  opacity: 1;
 }
 
 /*Modal Css*/
@@ -114,26 +146,16 @@ a
   margin-left: 20px;
   width: 500px;
 }
-
-.closeSymbol
-{
-  font-size: 30px;
-}
-
-.closeSymbol:hover{
-  opacity: 0.3;
-}
-
 /*Contant Compononent Form*/
 
 .contactH3
 {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .formContainer
 {
   margin: auto;
-  height: 100vh;
+  height: 65vh;
   width: 60vw;
 }
 

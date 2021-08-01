@@ -14,7 +14,7 @@ function Portfolio(){
   const [ projects ]  = useState([
     {
         name: 'Note Taker',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.',
+        description: 'A note taker a',
         url: 'https://maple-moose-24100.herokuapp.com/'
     },
     {

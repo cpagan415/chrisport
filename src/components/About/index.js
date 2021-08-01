@@ -21,8 +21,8 @@ function About(){
         class="aboutContainer">
             <h1>About Me</h1>
             <motion.p 
-            initial={{x: 100}}
-            animate={{x: 0, transition:{duration: 0.5}}}
+            initial={{x: -100}}
+            animate={{x: 0, transition:{ease: "easeIn", duration: 0.8}}}
             exit={{x:100,
             transition: {duration: 0.5}
             }}
