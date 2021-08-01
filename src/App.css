@@ -5,7 +5,6 @@
   font-family: 'Oswald', sans-serif;
 }
 
-
 .aboutContainer
 {
   background: white;
@@ -113,11 +112,11 @@ a
 
 .modalPhoto
 {
-  height:300px;
-  width: 550px;
+  height:150px;
+  width: 300px;
 }
 .modalBg {
-	background: rgba(5, 8, 4, .85);
+	background: rgba(0, 0, 0, .9);
 	bottom: 0;
   left: 0;
   right: 0;
@@ -128,23 +127,31 @@ a
 
 .modalContainer {
   width: 500px;
-  margin-top: 200px;
-  margin-left: 180px;
+  margin: 120px auto;
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .modalTitle {
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 30px;
+}
+
+.modalType
+{
+  font-size: 25px;
 }
 
 .modalP
 {
-  padding: 40px;
-  margin-left: 20px;
-  width: 500px;
+  font-size: 20px;
+  width: 700px;
+}
+
+.modalButton
+{
+  margin-top: 60px;
 }
 /*Contant Compononent Form*/
 

@@ -1,10 +1,11 @@
 import React from 'react'
 import '../../App.css';
 import {motion} from 'framer-motion';
+import Button from 'react-bootstrap/Button'
 
 function Modal({onClose, currentInfo}){
 
-  const {name, description, url, index} = currentInfo;
+  const {name, type, description, url, GitRepo, index} = currentInfo;
 
     return (
         <>
@@ -20,13 +21,17 @@ function Modal({onClose, currentInfo}){
         className="modalContainer">
           <div>
           <a onClick={() => window.open(url)}>
-            <img className="modalPhoto" src={`../../images/${index}.png`} alt="current category" />
+            {/*<img className="modalPhoto" src={`../../images/${index}.png`} alt="current category" />*/}
             </a>
           <h3 className="modalTitle">{name}</h3>
+          <p className="modalType">{type}</p>
           </div>
           <div>
           <p className="modalP">
             {description}
+            <br></br>
+          <Button className="modalButton" variant="light" onClick={() => window.open(url)}>{name}</Button>
+          <Button className="modalButton" variant="light" onClick={() => window.open(GitRepo)}>GitHub Repo</Button>
           </p>
           </div>
         </motion.div>
