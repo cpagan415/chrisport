@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 //access to font awesome icons here: 
-import { FaBars } from 'react-icons/fa';
-import {Nav, NavContainer, Logo, NavMenu, MobileIcon, NavLinks, NavItem} from './NavbarEl';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import {Nav, NavContainer, Logo, NavMenu, MobileIcon, NavLinks, NavItem } from './NavbarEl';
+import MobileMenu from '../MobileMenu';
+import {AnimatePresence} from 'framer-motion';
+
 
 function Navbar(){
+
+    const [ isOpenMenu, setOpenMenu ] = useState(false);
+
+    const clickEvent = () => 
+    {
+        setOpenMenu(!isOpenMenu)   
+    }
+
 
   return (
         <>
@@ -12,10 +23,13 @@ function Navbar(){
                 <Logo to="/">
                     CM
                 </Logo>
-                <MobileIcon>
-                    <FaBars />
+                <MobileIcon >
+                   {isOpenMenu ? <FaTimes onClick={clickEvent}/> : <FaBars  onClick={clickEvent}/>}
                 </MobileIcon>
-                <NavMenu>
+                <AnimatePresence>
+                {isOpenMenu && <MobileMenu />}
+                </AnimatePresence>
+                <NavMenu  >
                     <NavItem>
                         <NavLinks to='/about'>About Me</NavLinks>
                     </NavItem>

@@ -55,12 +55,19 @@ export const NavMenu = styled.ul`
 
     @media screen and (max-width: 768px)
     {
-        display:none;
+      display:none;
     }
 `
 
 export const NavItem = styled.li`
     height: 10px;
+
+    @media screen and (max-width: 768px)
+    {
+        margin-top: 10px;
+        padding-top: 40px;
+        height: 100px;
+    }
 `
 
 export const NavLinks = styled(Link)`
@@ -80,6 +87,3 @@ export const NavLinks = styled(Link)`
     }
 
 `
-
-
-

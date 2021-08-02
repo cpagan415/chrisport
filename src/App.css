@@ -49,7 +49,33 @@ a
 {
   cursor: pointer;
 }
+/*Hamburger Menu*/
+.mobileMenuContainer
+{
+  color: white;
+  margin-top: 90px;
+  background-color: black;
+  height: 78vh;
+  width: 80vw;
+  z-index: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.mobileMenu
+{
+  margin-top: 40px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  font-size: 20px;
+}
 
 
 /* Portfolio CSS */
@@ -187,6 +213,15 @@ a
         text-align: center;
         margin: 0px 150px 0px;
       }
+
+}
+
+@media only screen and (min-width: 768px)
+{
+  .mobileMenuContainer
+  {
+    display: none;
+  }
 
 }
 
