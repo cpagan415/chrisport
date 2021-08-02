@@ -20,7 +20,7 @@ function Navbar(){
         <>
         <Nav>
             <NavContainer>
-                <Logo to="/">
+                <Logo to="/" style={{color: 'white'}}>
                     CM
                 </Logo>
                 <MobileIcon >
@@ -31,13 +31,13 @@ function Navbar(){
                 </AnimatePresence>
                 <NavMenu  >
                     <NavItem>
-                        <NavLinks to='/about'>About Me</NavLinks>
+                        <NavLinks to='/about' style={{color: 'white'}}>About Me</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/portfolio'>Portfolio</NavLinks>
+                        <NavLinks to='/portfolio' style={{color: 'white'}}>Portfolio</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='/contact'>Contact</NavLinks>
+                        <NavLinks to='/contact' style={{color: 'white'}}>Contact</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavContainer>

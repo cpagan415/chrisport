@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MobileMenu = () => {
     return (
@@ -12,9 +13,9 @@ const MobileMenu = () => {
             }}
         >
             <ul className="mobileMenu">
-            <li>About Me</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li><Link to='/about' style={{color: 'white'}} className="menuLink">About Me</Link></li>
+            <li><Link to='/portfolio'  style={{color: 'white'}} className="menuLink">Portfolio</Link></li>
+            <li><Link to='/contact'  style={{color: 'white'}} className="menuLink">Contact</Link></li>
             </ul>
         </motion.div>
     )

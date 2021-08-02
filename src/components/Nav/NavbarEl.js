@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 export const Nav = styled.nav`
     background: #000;
@@ -80,10 +80,5 @@ export const NavLinks = styled(Link)`
     cursor: pointer;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-
-    &.active
-    {
-        border-bottom: 3px solid #01bf71;
-    }
 
 `
