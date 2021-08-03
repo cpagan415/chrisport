@@ -40,16 +40,16 @@ const PhotoList = (props) =>
         <AnimatePresence>
         {selectedCard && <Modal currentInfo={currentInfo} onClose={info}/>}
         </AnimatePresence>
-        <Container className="mt-5 mb-5 portfolioContainer">
-        <Row xs={1} s={2} md={2} lg={3} xl={4} className="g-3" style={{width: '100%'}}>
+        <Container className="m-5">
+        <Row xs={1} s={2} md={2} lg={2} xl={3} className="g-3 gridRow" style={{width: '100%'}}>
         {projects.map((project, i) => (
-             <Col>
+             <Col >
              <motion.div
             initial={{opacity: 0}}
             animate={{opacity: [0,1]}}
             transition={{ duration: 0.5, delay: i/7 }}
             >
-            <Card border="light" style={{height: '15rem'}} className={`text-center card-style ${selectedProject.name === project.name}`}
+            <Card border="light" style={{height: '15rem', width: '20rem'}} className={`text-center card-style ${selectedProject.name === project.name}`}
             key={project.name}>
                 <Card.Img className="gridPhoto"
                  src={`../../images/${i}.png`} 

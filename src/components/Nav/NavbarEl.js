@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 export const Nav = styled.nav`
     background: #000;
-    height: 90px;
+    height: 100px;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -14,15 +14,13 @@ export const Nav = styled.nav`
 export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 150px;
     z-index: 1;
     width: 100%;
-    padding: 0 24 px;
-    max-width; 1100px;
-`
+    `
+
 export const Logo = styled(Link)`
     color:white;
-    padding: 20px;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
@@ -31,19 +29,18 @@ export const Logo = styled(Link)`
 `
 //will not use this delete when finished
 export const MobileIcon = styled.div`
-    display: none;
-
     @media screen and (max-width: 768px)
     {
         display: block;
         position: absolute;
         top:0;
-        right:0;
+        right:0; 
         transform: translate(-100%, 60%);
         height: 70%;
         font-size: 1.5rem;
         cursor: pointer;
         color: white;
+        padding: 10px;
     }
 `  
 
@@ -61,6 +58,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 10px;
+    padding: 80px;
 
     @media screen and (max-width: 768px)
     {
@@ -75,7 +73,7 @@ export const NavLinks = styled(Link)`
     display:flex;
     alignt-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 0.2rem;
     height: 50%;
     cursor: pointer;
     font-size: 20px;

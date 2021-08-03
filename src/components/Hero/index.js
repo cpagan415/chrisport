@@ -17,7 +17,6 @@ function Hero(){
                 <Heroul>
                 <li><a onClick={() => window.open('https://www.linkedin.com/in/christina-pagan-19889b1aa/')}>LinkedIn</a></li>
                 <li><a onClick={() => window.open('https://github.com/cpagan415')}>Github</a></li>
-                <li>Contact</li>
                 </Heroul>
             </ HeroContent>
         </HeroContainer>

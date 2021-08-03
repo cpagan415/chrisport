@@ -12,10 +12,6 @@ function Footer(){
             <FaLinkedinIn class="icon" />
             <SiIndeed class="icon"/>
             </div>
-        <div id="name">
-                Christina Pagan 2021 (c)
-            </div>
-            
         </>
     )
 }

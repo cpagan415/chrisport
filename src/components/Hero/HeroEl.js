@@ -60,7 +60,7 @@ export const Heroul = styled.ul`
         color: white;
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         font-size: 20px;
 

@@ -20,18 +20,18 @@ function Navbar(){
         <>
         <Nav>
             <NavContainer>
-                <Logo to="/" style={{color: 'white'}}>
+            <Logo to="/" className="Logo" style={{color: 'white'}}>
                     CM
                 </Logo>
                 <MobileIcon >
-                   {isOpenMenu ? <FaTimes onClick={clickEvent}/> : <FaBars  onClick={clickEvent}/>}
+                   {isOpenMenu ? <FaTimes className="Fa"onClick={clickEvent}/> : <FaBars className="Fa" onClick={clickEvent}/>}
                 </MobileIcon>
                 <AnimatePresence>
                 {isOpenMenu && <MobileMenu />}
                 </AnimatePresence>
                 <NavMenu  >
                     <NavItem>
-                        <NavLinks to='/about' style={{color: 'white'}}>About Me</NavLinks>
+                        <NavLinks to='/about' style={{color: 'white'}}>About</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to='/portfolio' style={{color: 'white'}}>Portfolio</NavLinks>

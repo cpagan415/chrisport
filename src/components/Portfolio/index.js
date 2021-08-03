@@ -42,31 +42,31 @@ function Portfolio(){
     },
     {
         name: 'Water Ways',
-        type: 'Type here',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.',
+        type: 'Javascript',
+        description: 'This was a project done with a team of four amazing web developers in UCF Web Dev Bootcamp where we imagined we were tasked to created a website for a water vehicle rental company. Water Ways is an online marketplace that connects people who want to rent out thier boats or pesonal watercraft with people who are looking for the perfect boat for their next adventure.',
         url: 'https://waterwaysrentals.herokuapp.com/',
-        GitRepo: 'GitRepo'
+        GitRepo: 'https://github.com/justpuzey/water-sports-xchange'
     },
     {
         name: 'E-Commerce',
-        type: 'Type here',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.',
+        type: 'JavaScript, MySQL, Sequelize',
+        description: 'Challenge with UCF WebDev Bootcamp where we imaged we were building a backend for an e-commerce website where we took a working Express.js API and configured it to use Sequelize to interact with a MySQL database.',
         url: 'https://github.com/cpagan415/ecommerce-ORM',
-        GitRepo: 'GitRepo'
+        GitRepo: 'https://github.com/cpagan415/ecommerce-ORM'
     },
     {
         name: 'Employee Tracker',
-        type: 'Type here',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.',
+        type: 'Node.js, Inquirer, MySQL',
+        description: 'A coding challenge done with UCF WebDev Bootcamp where I created a backend for a content management system with Inquirer and MySQl.',
         url: 'https://github.com/cpagan415/employee-management-system',
-        GitRepo: 'GitRepo'
+        GitRepo: 'https://github.com/cpagan415/employee-management-system'
     },
     {
         name: 'Tech Blog',
-        type: 'Type here',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet dictum sit amet. Massa tincidunt dui ut ornare lectus sit amet.',
+        type: 'JavaScript',
+        description: 'A tech blog web application currently in progess.',
         url: 'https://github.com/cpagan415/techblog',
-        GitRepo: 'GitRepo'
+        GitRepo: 'https://github.com/cpagan415/techblog'
     }
     
 ])
@@ -76,10 +76,10 @@ function Portfolio(){
         return(
           <>
           <Navbar />
-          <motion.div
+          <motion.div className="portfolioContainer"
           exit={{opacity: 0,
           transition: {duration: 0.3}}}>
-          <h3>Portfolio</h3>
+          <h3 className="portfolioH">Portfolio</h3>
             <PhotoList
              projects={projects}
              selectedProject={selectedProject}
