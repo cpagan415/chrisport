@@ -12,6 +12,8 @@ import Modal from '../Modal';
 
 
 
+
+
 //passed prop from Portfolio to the Photolist for Modal Functionality 
 const PhotoList = (props) =>
 {
@@ -52,7 +54,7 @@ const PhotoList = (props) =>
             <Card border="light" style={{height: '15rem', width: '20rem'}} className={`text-center card-style ${selectedProject.name === project.name}`}
             key={project.name}>
                 <Card.Img className="gridPhoto"
-                 src={`../../images/${i}.png`} 
+                 src={require(`../../images/${i}.png`).default} 
                 alt={`${project.name}`} key={project.name}></Card.Img>
                 <Card.ImgOverlay className="imgOverlay">
                 <Card.Title className="overlayTitle">{project.name}</Card.Title>
