@@ -12,6 +12,8 @@ A React Portofolio made through UCF WebDev Bootcamp.
 
 Deployment: [Christina's React Portfolio](http://cpagan415.github.io/chrisport/)
 
+You can view some of the projects I have worked on with the bootcamp in the portfolio section. Click on Portfolio in the navigation bar and hover over one of the project images. There, you will a button that says "Learn More". A modal will appear and you will have the option to see the deployment of the project or git repo.
+
 # Tools 
 
 - [React.js](https://reactjs.org/)
