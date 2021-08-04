@@ -14,12 +14,12 @@ Deployment: [Christina's React Portfolio](http://cpagan415.github.io/chrisport/)
 
 # Tools 
 
-- React.js
-- React Bootstrap
-- Framer Motion
+- [React.js](https://reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 # Inspirations
 
-- Brian Design
-- Codavilla
-- Arlsan
+- [Brian Design](https://www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A)
+- [Codavilla](https://www.codavilla.com/)
+- [Arlsan](https://www.youtube.com/channel/UCe1NM6d7y7O1Q7ZKJ4lLSFw)
