@@ -88,8 +88,7 @@ a
 
 .portfolioH
 {
-  margin-top: 30px;
-  margin-left: 50px;
+  text-align: center;
 }
 
 .gridPhoto
@@ -102,7 +101,8 @@ a
 .card-style
 {
   box-shadow: 0 10px 8px 0 rgba(0,0,0,0.1);
-  width: 350px;
+  height: 15rem;
+  width: 20rem;
 }
 
 .imgOverlay
@@ -195,7 +195,7 @@ a
 .formContainer
 {
   margin: auto;
-  height: 65vh;
+  height: 100vh;
   width: 60vw;
 }
 
@@ -250,6 +250,28 @@ a
   {
     width: 400px;
   }
+
+  .portfolioH
+  {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .card-style
+  {
+    width: 280px;
+    height: 200px;
+  }
+
+  .imgOverlay:hover .overlayTitle
+  {
+    transform: translateY(30px);
+  }
+  
+  .imgOverlay:hover .overlayDescription
+  {
+    transform: translateY(40px);
+  }
 }
 
 @media only screen and (max-width: 480px)
@@ -263,6 +285,51 @@ a
   {
     width: 100px;
   }
+
+  .portfolioH
+  {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .card-style
+  {
+    width: 280px;
+    height: 200px;
+  }
+
+  .imgOverlay:hover .overlayTitle
+{
+  transform: translateY(20px);
+}
+
+.imgOverlay:hover .overlayDescription
+{
+  transform: translateY(40px);
+}
+
+.modalContainer
+  {
+   margin: 0 150px;
+  }
+
+  .modalP
+  {
+    font-size: 15px;
+  }
+
+  .modalTitle
+  {
+    margin-top: 120px;
+    font-size: 30px;
+  }
+
+  .modalButton
+  {
+    margin-top: 10px;
+  }
+
+  
 }
 @media only screen and (min-width: 320px)
 {
@@ -284,6 +351,74 @@ a
     .mobileMenuContainer{
       margin-top: 100px;
     }
+}
+
+
+@media only screen and (max-width: 320px)
+{
+  .mobileMenuContainer
+  {
+    margin-top: 90px;
+    width: 100vw;
+  }
+
+  .mobileMenu
+  {
+    margin-top: 30px;
+    margin-right: 15px;
+  }
+
+  .aboutP
+      {
+        font-size: 15px;
+      }
+
+
+      .card-style
+    {
+
+      width: 200px;
+      height: 200px;
+    }
+
+    .portfolioH
+    {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+
+.imgOverlay:hover .overlayTitle
+{
+  transform: translateY(50px);
+}
+
+.imgOverlay:hover .overlayDescription
+{
+  transform: translateY(60px);
+}
+
+.modalContainer
+  {
+   margin: 0 150px;
+  }
+
+  .modalP
+  {
+    font-size: 15px;
+  }
+
+  .modalTitle
+  {
+    margin-top: 150px;
+    font-size: 30px;
+  }
+
+  .modalButton
+  {
+    margin-top: 10px;
+  }
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');

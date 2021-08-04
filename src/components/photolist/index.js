@@ -51,7 +51,7 @@ const PhotoList = (props) =>
             animate={{opacity: [0,1]}}
             transition={{ duration: 0.5, delay: i/7 }}
             >
-            <Card border="light" style={{height: '15rem', width: '20rem'}} className={`text-center card-style ${selectedProject.name === project.name}`}
+            <Card border="light"  className={`text-center card-style ${selectedProject.name === project.name}`}
             key={project.name}>
                 <Card.Img className="gridPhoto"
                  src={require(`../../images/${i}.png`).default} 
