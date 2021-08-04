@@ -1,5 +1,7 @@
 ## React Portofolio: UCF WebDev BootCamp
 
+A React Portofolio made through UCF WebDev Bootcamp.
+
 ## About the Project
 
   This is a React.js web application made through UCF's WebDev Bootcamp to showcase some of the work I have done during my time there. I experimented with react router and framer motion for the transition between the different componenents on the web page. Further issues that need to be addressed is the Contact Form functionality and a more mobile friendly design. 
