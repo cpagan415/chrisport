@@ -4,14 +4,10 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { SiIndeed } from "react-icons/si";
 
 
-function Footer(){
+function Footer() {
     return (
         <>
-        <div class="footerContainer">
-            <FaGithub class="icon" />
-            <FaLinkedinIn class="icon" />
-            <SiIndeed class="icon"/>
-            </div>
+            <div ></div>
         </>
     )
 }
